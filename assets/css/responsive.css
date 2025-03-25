@@ -1,0 +1,40 @@
+@media (max-width: 1200px) {
+    nav {
+        padding: 1rem 2rem;
+    }
+    nav ul {
+        gap: 40px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    nav {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    nav ul.hidden {
+        display: none;
+    }
+    nav ul {
+        background-color: #FFFFFF; /* Warna background menu */
+        position: absolute;
+        top: 96px; /* Sejajar dengan tinggi navbar */
+        left: 0;
+        width: 100%;
+        padding: 1rem 0;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan agar terlihat jelas */
+        z-index: 999;
+        flex-direction: column;
+    }
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+    nav .menu-icon {
+        display: flex;
+        cursor: pointer;
+    }
+
+    /* HERO SECTION */
+   
+}
