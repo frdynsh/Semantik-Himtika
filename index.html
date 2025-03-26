@@ -7,7 +7,9 @@
 
     <!-- ICON -->
     <link rel="icon" href="favicon.icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     
     
     <!-- CSS -->
@@ -266,10 +268,42 @@
 
     <!-- START FAQ SECTION-->
     <section class="faq-section">
-        <h2>Frequently asked question</h2>
-        <p>Jika anda memiliki pertanyaan lain, kontak kami dengan klik tombol di bawah ini</p>
-        <button><span>Contact Us</span></button>
-     </section>
+        <div class="container-faq">
+            <h2 class="text-h2">Frequently asked question</h2>
+            <p class="text-p" >Jika anda memiliki pertanyaan lain, kontak kami dengan klik tombol di bawah ini</p>
+            <button><span>Contact Us</span></button>
+            <ul class="container-accordion">
+                <li>
+                    <input type="checkbox" name="accordion" id="first"  class="accordion-toggle">
+                    <label id="faq" for="first">Apa itu semantik<i class="fa-solid fa-circle-arrow-down"></i></label>
+                    <div class="content">
+                        <p>SEMANTIK 9.0 adalah wadah bagi mahasiswa informatika unsika untuk menunjukan bakat dan keahlian melalui ajang kompetisi hard skill dalam bidang informatika.</p>
+                    </div>
+                </li>
+                <li>
+                    <input type="checkbox" name="accordion" id="second"  class="accordion-toggle">
+                    <label id="faq" for="second">Benefit apa yang di dapat?<i class="fa-solid fa-circle-arrow-down"></i></label>
+                    <div class="content">
+                        <p>lorem ipsum dolor sir ametttt. lorem ipsum dolor sir amettttlorem ipsum dolor sir amettttlorem ipsum dolor sir amettttlorem ipsum dolor sir amettttlorem ipsum dolor sir amettttlorem ipsum dolor sir ametttt.</p>
+                    </div>
+                </li>
+                <li>
+                    <input type="checkbox" name="accordion" id="third"  class="accordion-toggle">
+                    <label id="faq" for="third">Projectnya bertemakan apa?<i class="fa-solid fa-circle-arrow-down"></i></label>
+                    <div class="content">
+                        <p>lorem ipsum dolor sir ametttt. lorem ipsum dolor sir amettttlorem ipsum dolor sir amettttlorem ipsum dolor sir amettttlorem ipsum dolor sir amettttlorem ipsum dolor sir amettttlorem ipsum dolor sir ametttt.</p>
+                    </div>
+                </li>
+                <li>
+                    <input type="checkbox" name="accordion" id="fourth"  class="accordion-toggle">
+                    <label id="faq" for="fourth">Apakah projectnya akan di publish?<i class="fa-solid fa-circle-arrow-down"></i></label>
+                    <div class="content">
+                        <p>lorem ipsum dolor sir ametttt. lorem ipsum dolor sir amettttlorem ipsum dolor sir amettttlorem ipsum dolor sir amettttlorem ipsum dolor sir amettttlorem ipsum dolor sir amettttlorem ipsum dolor sir ametttt.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
     <!-- END AFTERMOVIE SECTION-->
     
     <script src="assets/js/script.js"></script>

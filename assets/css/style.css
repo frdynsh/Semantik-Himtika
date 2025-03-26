@@ -597,8 +597,9 @@ nav ul li a:hover {
 }
 
 .dokumentasi-container {
-    width: 1200px;
-    height: 800px;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 800px;
     border-radius: 1em;
     padding: 2em;
     display: flex;
@@ -677,7 +678,6 @@ nav ul li a:hover {
     font-weight: bold;
     max-width: 700px;
     letter-spacing: -4px;
-    margin-bottom: 1rem;
 }
 .aftermovie-section p {
     color: #FFFFFF;
@@ -698,7 +698,7 @@ nav ul li a:hover {
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .aftermovie-section button span {
@@ -736,7 +736,7 @@ nav ul li a:hover {
     background-position: center;
     background-repeat: no-repeat
 }
-.faq-section h2 {
+.faq-section .text-h2 {
     background: linear-gradient(0deg, #5F29FF, #2A049C);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -745,7 +745,7 @@ nav ul li a:hover {
     letter-spacing: -4px;
     max-width: 780px;
 }
-.faq-section p {
+.faq-section .text-p {
     background: linear-gradient(0deg, #5F29FF, #2A049C);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -764,7 +764,6 @@ nav ul li a:hover {
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    margin-bottom: 1rem;
 }
 
 .faq-section button span {
@@ -772,3 +771,93 @@ nav ul li a:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.container-faq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
+
+.faq-section .container-accordion {
+    position: relative;
+    z-index: 2;
+}  
+
+.container-accordion{
+    margin-bottom: 5em;
+    width: 600px;
+}
+.container-accordion li{
+    list-style: none;
+    width: auto;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 16px;
+    background: #D2B2FF;
+}
+
+.container-accordion li label{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    color: #2E2E2E;
+    font-size: 1rem;
+    cursor: pointer;
+    justify-content: space-between;
+}
+.container-accordion li label i {
+    position: relative;
+    font-size: 1.8rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px; 
+    height: 30px;
+    border: 3px solid white; 
+    border-radius: 50%; 
+    background: linear-gradient(0deg, #5F29FF, #2A049C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.container-accordion input[type="checkbox"]:checked + label i {
+    transform: rotate(180deg);
+}
+
+input[type="checkbox"]{
+    display: none;
+  }
+  .container-accordion .content{
+    color: #FFFFFF;
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out, opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  
+  .container-accordion input[type="checkbox"]:checked + label + .content{
+    max-height: 500px;
+    opacity: 1;
+    transform: scale(1);
+  }
+  .container-accordion .content{
+    display: flex;
+    align-items: center;
+  }
+  .container-accordion .content p{
+    color: #2E2E2E;
+    max-width: 500px;
+    text-align: left;
+    font-size: 1rem;
+  }

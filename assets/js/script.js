@@ -31,6 +31,7 @@ menuIcon.addEventListener("click", () => {
     menuList.classList.toggle("hidden");
 })
 
+
 // LIVE HERO SECTION
 document.addEventListener("DOMContentLoaded", function () {
     const liveHero = document.querySelector(".live-hero");
@@ -98,6 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
 // TIMELINE SECTION
 document.addEventListener("DOMContentLoaded", function() {
     const timelineItems = document.querySelectorAll(".timeline-item");
@@ -112,3 +114,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
     timelineItems.forEach(item => observer.observe(item));
 });
+
+//  FAQ SECTION - ACCORDION
+document.querySelectorAll('.accordion-toggle').forEach((checkbox) => {
+    checkbox.addEventListener('change', function() {
+      if (this.checked) {
+        document.querySelectorAll('.accordion-toggle').forEach((other) => {
+          if (other !== this) {
+            other.checked = false;
+          }
+        });
+      }
+    });
+  });
