@@ -265,27 +265,27 @@ nav ul li a:hover {
 }
 .tujuan-section .bintang-kirikecil{
     position: absolute;
-    top: 362%;
+    top: 68%;
     left: 3%;
 }
 .tujuan-section .bintang-kiriatas{
     position: absolute;
-    top: 304%;
+    top: 27%;
     left: 10%;
 }
 .tujuan-section .bintang-kiribesar{
     position: absolute;
-    top: 353%;
+    top: 62%;
     left: 28%;
 }
 .tujuan-section .bintang-kanankecil{
     position: absolute;
-    top: 300%;
+    top: 20%;
     left: 83%;
 }
 .tujuan-section .bintang-kananbawah{
     position: absolute;
-    top: 357%;
+    top: 65%;
     left: 67%;
 }
 
@@ -328,6 +328,17 @@ nav ul li a:hover {
     flex-direction: column;
     opacity: 1;
     transform: translateY(0);
+    position: relative;
+}
+.bidang-slide.active .bintang-besar {
+    position: absolute;
+    top: 0;
+    left: 20%;
+}
+.bidang-slide.active .bintang-kecil {
+    position: absolute;
+    top: 43%;
+    left: 69%;
 }
 
 .bidang-slide h2 {

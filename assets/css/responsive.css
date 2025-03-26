@@ -95,6 +95,7 @@
     .text-about p {
         font-size: 1rem;
     }
+
     /* TUJUAN SECTION */
     .tujuan-section {
         padding: 0 1rem;
@@ -105,6 +106,30 @@
     }
     .text-tujuan p {
         font-size: 1rem;
+    }
+    .tujuan-section .bintang-kirikecil{
+        top: 68%;
+        left: 3%;
+    }
+    .tujuan-section .bintang-kiriatas{
+        top: 17%;
+        left: 10%;
+    }
+    .tujuan-section .bintang-kiribesar{
+        top: 75%;
+        left: 78%;
+    }
+    .tujuan-section .bintang-kanankecil{
+        top: 30%;
+        left: 50%;
+    }
+    .tujuan-section .bintang-kananbawah{
+        display: none;
+    }
+    .tujuan-section .bintang-kirikecil,
+    .tujuan-section .bintang-kiriatas,
+    .tujuan-section .bintang-kanankecil {
+        width: 12vw; 
     }
 
     /* BIDANG SECTION */
@@ -130,6 +155,14 @@
     }
     .bidang-slide p {
         font-size: 1rem;
+    }
+    .bidang-slide.active .bintang-besar {
+        top: -30%;
+        left: 0%;
+    }
+    .bidang-slide.active .bintang-kecil {
+        top: 110%;
+        left: 80%;
     }
 
     .bidang-nav {
