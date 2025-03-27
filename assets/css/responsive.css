@@ -124,6 +124,7 @@
     .tujuan-section .bintang-kiribesar{
         top: 75%;
         left: 78%;
+        width: 14vw;
     }
     .tujuan-section .bintang-kanankecil{
         top: 30%;
@@ -135,7 +136,7 @@
     .tujuan-section .bintang-kirikecil,
     .tujuan-section .bintang-kiriatas,
     .tujuan-section .bintang-kanankecil {
-        width: 12vw; 
+        width: 9vw; 
     }
 
     /* BIDANG SECTION */
@@ -167,10 +168,12 @@
     .bidang-slide.active .bintang-besar {
         top: -30%;
         left: 0%;
+        width: 12vw;
     }
     .bidang-slide.active .bintang-kecil {
         top: 110%;
         left: 80%;
+        width: 10vw;
     }
 
     .bidang-nav {
@@ -182,8 +185,10 @@
         margin-top: 20%;
     }
     .bidang-nav button {
-        width: 35px;
-        height: 35px;
+        width: 28px;
+        height: 28px;
+        font-size: 1rem;
+        border: 3px solid #D2B2FF;
     }
     .bidang-dots {
         flex-direction: row;
@@ -207,7 +212,7 @@
 
     /* TIMELINE SECTION */
     .timeline {
-        height: 1210px;
+        height: 900px;
     }
     .timeline h2 {
         font-size: 13vw;
@@ -223,14 +228,17 @@
         grid-template-columns: 1fr 60px 1fr; /* Mengecilkan jarak tengah */
     }
     .timeline-content {
-        padding: 0.8rem;
         max-width: 300px;
+        padding: 1rem 1rem 1rem 0.8rem !important;
     }
     .timeline-content h3 {
-        font-size: 0.7rem;
+        padding: 0;
+        font-size: 0.66rem;
+        margin: 0 0 0.5rem 0;
     }
     .timeline-content p {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
+        margin: 0;
     }
     .timeline-circle {
         width: 35px;
