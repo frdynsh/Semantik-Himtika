@@ -30,16 +30,16 @@
             <i class="fa-solid fa-bars"></i>
         </div>
         <ul class="hidden" id="menu-list">
-            <li><a href="">Home</a></li>               
-            <li><a href="">About Us</a></li>               
-            <li><a href="">Documentation</a></li>               
-            <li><a href="">FaQ</a></li>               
+            <li><a href="#home">Home</a></li>               
+            <li><a href="#about">About Us</a></li>               
+            <li><a href="#dokumentation">Documentation</a></li>               
+            <li><a href="#FAQ">FaQ</a></li>               
         </ul>
     </nav>
     <!-- END NAVBAR -->
 
     <!-- START HERO SECTION -->
-    <section class="hero-section">
+    <section class="hero-section" id="home">
         <img class="bintang-kirikecil" src="assets/image/hero-section/kirikecil.png" alt="">
         <img class="bintang-kiriatas" src="assets/image/hero-section/kiriatas.png" alt="">
         <img class="bintang-kiribesar" src="assets/image/hero-section/kiribesar.png" alt="">
@@ -116,7 +116,7 @@
     <!-- END HERO SECTION -->
 
     <!-- START ABOUT SECTION -->
-    <section class="about-section">
+    <section class="about-section" id="about">
         <div class="text-about">
             <h2>About Us</h2>
             <p>SEMANTIK 9.0 adalah wadah bagi mahasiswa informatika unsika untuk menunjukan bakat dan keahlian melalui ajang kompetisi hard skill dalam bidang informatika.</p>
@@ -268,7 +268,7 @@
     <!-- END TIMELINE SECTION -->
 
    <!-- START DOKUMENTASI SECTION -->
-    <section class="dokumentasi-section">
+    <section class="dokumentasi-section" id="dokumentation">
         <h2>Dokumentasi</h2>
         <p>Lihat momen-momen inspiratif dari kegiatan SEMANTIK 9.0, di mana mahasiswa Informatika Unsika berkumpul, berkompetisi, dan berkolaborasi. Dari presentasi ide inovatif hingga sesi diskusi yang mendalam, setiap kegiatan memperlihatkan semangat dan kreativitas para peserta. Saksikan bagaimana acara ini menjadi ajang berharga untuk mengasah kemampuan hardskill di bidang Informatika.</p>
         <div class="dokumentasi-container">
@@ -302,27 +302,29 @@
      <section class="aftermovie-section">
         <h2>Semantik 9.0 After Movie</h2>
         <!-- <button><span>Play</span></button> -->
-        <button class="button-with-icon">
-            <svg
-            class="icon"
-            id="Play"
-            viewBox="0 0 48 48"
-            xmlns="http://www.w3.org/2000/svg"
-            >
-            <defs>
-                <linearGradient id="gradient-icon" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stop-color="#2A049C"/>
-                    <stop offset="100%" stop-color="#5F29FF"/>
-                </linearGradient>
-            </defs>
-            <path
-                class="color000000 svgShape"
-                fill="url(#gradient-icon)"
-                d="M12 39c-.549 0-1.095-.15-1.578-.447A3.008 3.008 0 0 1 9 36V12c0-1.041.54-2.007 1.422-2.553a3.014 3.014 0 0 1 2.919-.132l24 12a3.003 3.003 0 0 1 0 5.37l-24 12c-.42.21-.885.315-1.341.315z"
-            ></path>
-            </svg>
-            <span class="text">Play</span>
-        </button>  
+        <a href="https://youtu.be/4uLztCkLQJs?si=zL4E68co61HYN3zw" target="_blank">
+            <button class="button-with-icon">
+                <svg
+                class="icon"
+                id="Play"
+                viewBox="0 0 48 48"
+                xmlns="http://www.w3.org/2000/svg"
+                >
+                <defs>
+                    <linearGradient id="gradient-icon" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#2A049C"/>
+                        <stop offset="100%" stop-color="#5F29FF"/>
+                    </linearGradient>
+                </defs>
+                <path
+                    class="color000000 svgShape"
+                    fill="url(#gradient-icon)"
+                    d="M12 39c-.549 0-1.095-.15-1.578-.447A3.008 3.008 0 0 1 9 36V12c0-1.041.54-2.007 1.422-2.553a3.014 3.014 0 0 1 2.919-.132l24 12a3.003 3.003 0 0 1 0 5.37l-24 12c-.42.21-.885.315-1.341.315z"
+                ></path>
+                </svg>
+                <span class="text">Play</span>
+            </button>  
+        </a>
         <p>Saksikan perjalanan dan momen-momen terbaik dari SEMANTIK 9.0 dalam after movie ini! Dari kompetisi yang seru hingga kolaborasi yang penuh semangat, video ini menangkap setiap momen berharga yang tercipta. Mari rasakan antusiasme dan inspirasi dari mahasiswa Informatika Unsika yang berpartisipasi dalam ajang kompetisi ini. Klik play untuk menyaksikan semangat berkreasi dan berkompetisi di SEMANTIK 9.0!</p>
         <iframe class="video-aftermovie" src="https://www.youtube.com/embed/4uLztCkLQJs"></iframe>
         <img class="svg-aftermovie" src="assets/image/aftermovie-section/svg.png" alt="" >
@@ -330,7 +332,7 @@
     <!-- END AFTERMOVIE SECTION-->
 
     <!-- START FAQ SECTION-->
-    <section class="faq-section">
+    <section class="faq-section" id="FAQ">
         <div class="container-faq">
             <h2 class="text-h2">Frequently asked question</h2>
             <p class="text-p" >Jika anda memiliki pertanyaan lain, kontak kami dengan klik tombol di bawah ini</p>
