@@ -2,6 +2,7 @@
     nav {
         flex-wrap: wrap;
         align-items: center;
+        padding: 0 1rem;
     }
     
     nav ul.hidden {
@@ -34,15 +35,16 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat; 
+        height: 650px;
     }
     .hero-section .text-hero h2 {
-        margin-top: 5rem;
+        margin-top: 7rem;
         font-size: 13vw;
     }
     .hero-section .text-hero p {
         font-size: 1rem;
     }
-    .text-hero button {
+    .text-hero .button {
         font-size: 0.9rem;
         padding: 12px 30px;
     }
@@ -75,6 +77,10 @@
     .hero-section .bintang-kananbawah,
     .hero-section .bintang-kananbesar {
         width: 12vw; 
+    }
+    .live-hero .live {
+        padding: 0 45px;    
+        animation: tickerMove 1.5s linear infinite;
     }
     
     /* ABOUT SECTION */
@@ -175,7 +181,10 @@
         transform: translateX(-50%);
         margin-top: 20%;
     }
-
+    .bidang-nav button {
+        width: 35px;
+        height: 35px;
+    }
     .bidang-dots {
         flex-direction: row;
         gap: 5px;
@@ -185,13 +194,15 @@
         width: 6px;
         height: 6px;
     }
-    #prev i,
-    #next i {
-        display: inline-block !important;
-        visibility: visible !important;
-        font-size: 1.5rem; 
-        color: white !important; 
-        opacity: 1 !important;
+    #prev i::before {
+        content: "\f060"; 
+    }
+    #next i::before {
+        content: "\f061";
+    }
+    .live-bidang .live {
+        padding: 0 45px;
+        animation: tickerMove 1.5s linear infinite;
     }
 
     /* TIMELINE SECTION */
@@ -227,9 +238,10 @@
         font-size: 1.3rem;
     }
 
+
     /* DOKUMENTASI SECTION */
     .dokumentasi-section {
-        padding: 1rem;
+        padding: 1.5rem;
         height: 650px;
     }
 
@@ -238,47 +250,23 @@
     }
 
     .dokumentasi-section p {
-        font-size: 1rem;
-        margin-bottom: 1rem;
+        font-size: 0.75rem;
+        margin-bottom: 2rem;
     }
 
     .dokumentasi-container {
-        min-height: 200px;
-        padding: 1.5em;
+        min-height: 270px;
         gap: 0.75em;
     }
-
-    .row {
-        border-radius: 0.8rem;
-        gap: 0.75em;
-    }
-    .col {
-        border-radius: 0.8rem;
-    }
-    .row-2 .col-1 {
-        gap: 0.75em;
-    }
-    .row-2 .col-1 .item-1{
-        border-radius: 0.8em;    
-    }
-    .row-2 .col-1 .item-2{
-        border-radius: 0.8em;    
+    .dokumentasi-container div {
+        border-radius: 0.8em;
     }
 
-    .row-1 .col-1, 
-    .row-1 .col-2,
-    .row-1 .col-3 {
-        min-height: 80px;
-    }
-    .row-2 .col-1, 
-    .row-2 .col-2 {
-        min-height: 180px;
-    }
-
+    
     /* AFTERMOVIE SECTION */
     .aftermovie-section {
-        height: auto;
-        padding: 2rem 2.5rem;
+        height: 630px;
+        padding: 5rem 2rem;
     }
 
     .aftermovie-section h2 {
@@ -287,19 +275,20 @@
 
     .aftermovie-section p {
         line-height: normal;
-        margin-bottom: 10rem;
-        font-size: 1rem;
+        font-size: 0.75rem;
     }
-
-    .aftermovie-section .video-aftermovie {
-        width: 100%;
-        max-width: 90%;
+    .button-with-icon {
+        width: 100px;
+        height: 35px;
     }
-
+    .aftermovie-section iframe {
+        width: 90%;
+    }
 
     /* FAQ SECTION */
     .faq-section {
-        padding: 2rem 1rem;
+        height: 830px;
+        padding: 0 1em;
     }
 
     .faq-section .text-h2 {
@@ -322,7 +311,8 @@
         padding: 0.5rem;
     }
 
-    .container-accordion li label {
+    .container-accordion li label, 
+    .container-accordion .content p{
         font-size: 0.9rem;
     }
 
@@ -330,5 +320,19 @@
         font-size: 1.2rem;
         width: 25px;
         height: 25px;
+    }
+
+    /* =============== section Footer ================ */
+    .footer-text{
+        display: flex;
+        position: relative;
+        gap: 70px;
+        padding: 20px 0 0 20px;
+    }
+    .logo-section{
+        margin-left: 0px;
+    }
+    .section-3{
+        margin-top: -40px; 
     }
 }   
