@@ -42,6 +42,7 @@ nav ul {
     align-items: center;
     gap: 40px;
     list-style: none;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 nav ul li a {
@@ -452,7 +453,7 @@ nav ul li a:hover {
 }
 .bidang-container {
     position: relative;
-    width: 90%;
+    width: 100%;
     max-width: 1180px;
     height: auto;
     display: flex;
@@ -464,6 +465,9 @@ nav ul li a:hover {
 .bidang-slide{
     display: none;
     align-items: center;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
 .bidang-slide.active {
@@ -480,7 +484,7 @@ nav ul li a:hover {
 }
 .bidang-slide.active .bintang-kecil {
     position: absolute;
-    top: 43%;
+    top: 35%;
     left: 69%;
 }
 
@@ -498,6 +502,8 @@ nav ul li a:hover {
     max-width: 750px;
     font-size: clamp(1rem, 2vw, 1.25rem);
     color: #FFFFFF;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
 }
 .left {
     max-width: 800px;
