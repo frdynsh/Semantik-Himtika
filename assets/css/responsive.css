@@ -1,4 +1,22 @@
 @media (max-width: 480px){
+    /*==================== LOADER ====================*/
+    .loader {
+        font-size: 30px; /* Ukuran lebih kecil */
+        gap: 8px; /* Jarak antar huruf lebih kecil */
+    }
+
+    .loader span {
+        min-width: 35px;
+        height: 50px;
+        font-size: 30px;
+    }
+
+    .loader:before {
+        width: 50%; /* Lebar bayangan lebih kecil */
+        height: 5px; /* Tinggi bayangan lebih kecil */
+        bottom: -6px; /* Posisi bayangan sedikit naik */
+    }
+
     /*==================== NAVBAR ====================*/
     nav {
         flex-wrap: wrap;
