@@ -1,4 +1,4 @@
-@media (max-width: 480px){
+@media (max-width: 768px){
     /*==================== LOADER ====================*/
     .loader {
         font-size: 30px; /* Ukuran lebih kecil */
@@ -372,10 +372,14 @@
         gap: 70px;
         padding: 20px 0 0 20px;
     }
+
     .logo-section{
         width: 35%;
     }
     .section-3{
         margin-top: -40px; 
+    }
+    .footer-bottom p{
+        font-size: 1rem;
     }
 }   
