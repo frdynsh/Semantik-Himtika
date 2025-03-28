@@ -954,7 +954,75 @@ nav ul li a:hover {
     font-weight: 400;
     margin-bottom: 1rem;
 }
-.faq-section button {
+.faq-section .button-with-icon {
+    border: 2px solid red;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #BFAAFF;
+    font-family: "Istok Web", sans-serif;
+    letter-spacing: 1px;
+    padding: 0 12px;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: normal;
+    border-radius: 3px;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+    transform: translateY(0px);
+    position: relative;
+    margin-bottom: 1rem;
+    box-shadow:
+    inset 0 30px 30px -15px rgba(255, 255, 255, 0.1),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.3),
+    inset 0 1px 20px rgba(0, 0, 0, 0),
+    0 3px 0 #560f98,
+    0 3px 2px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.1),
+    0 10px 20px rgba(0, 0, 0, 0.1);
+    background-color: #BFAAFF;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+    transition: 150ms all ease-in-out;
+}
+  
+.faq-section .button-with-icon .icon {
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+    transition: all 0.5s ease-in-out;
+}
+
+.faq-section .button-with-icon:active {
+    transform: translateY(3px);
+    box-shadow:
+    inset 0 16px 2px -15px rgba(0, 0, 0, 0),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.15),
+    inset 0 1px 20px rgba(0, 0, 0, 0.1),
+    0 0 0 #2A049C,
+    0 0 0 2px rgba(255, 255, 255, 0.5),
+    0 0 0 rgba(0, 0, 0, 0),
+    0 0 0 rgba(0, 0, 0, 0);
+}
+
+.button-with-icon:hover .text {
+    transform: translateX(110px);
+}
+.button-with-icon:hover .icon {
+    transform: translate(50px);
+}
+
+.text {
+    background: linear-gradient(to bottom, #2A049C, #5F29FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.5s ease-in-out;
+}
+/* .faq-section button {
     border: none;
     background-color: #BFAAFF;
     box-shadow: 0 8px 1px rgba(0, 0, 0, 0.2);
@@ -971,7 +1039,7 @@ nav ul li a:hover {
     background: linear-gradient(to bottom, #2A049C, #5F29FF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
+} */
 
 .container-faq{
     display: flex;
@@ -1060,132 +1128,11 @@ input[type="checkbox"]{
     font-size: 1rem;
   }
 
-  /* =============== section Footer ================ */
- footer {
-    background-color: #2A049C;
-    color: white;
-}
-
-.footer-container {
-    display: flex;
-    position: relative;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    flex-direction: row;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-text{
-    display: flex;
-    position: relative;
-    flex-wrap: wrap;
-    gap: 140px;
-    padding: 20px 20px 0 250px;
-}
-
-.footer-section h4 {
-    font-size: 1.3em;
-    margin-bottom: 10px;
-}
-
-.footer-section ul li {
-    list-style: none;
-    margin: 15px 0;
-}
-
-.footer-section ul li a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
-    font-size: 1.0em;
-}
-
-.footer-section ul li a:hover {
-    color: #b3b3b3;
-}
-
-.logo-section {
-    text-align: center;
-    margin-top: 2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 206px;
-}
-
-.logo-footer {
-    border-radius: 2rem;
-}
   
-.footer-bottom {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #2A049C;
-}
-
-.footer-line {
-    width: 100%;
-    height: 5px;
-    background-color: rgb(255, 255, 255);
-    margin-bottom: 10px;
-}
-
-.footer-bottom p {
-    margin: 5px 0;
-    color: white;
-    font-size: 18px;
-    text-align: center;
-}
-
-.footer-logo-container {
-    display: flex;
-    align-items: center;
-}
-
-.footer-logo {
-    max-width: 50px;
-    margin: 10px 10px 10px 0;
-}
-
-.footer-logo-container p {
-    margin: 0;
-    color: white;
-    font-size: 18px;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    margin-top: 5px;
-}
-
-.social-icons a {
-    color: white;
-    margin: 0 5px;
-    font-size: 20px;
-    transition: color 0.3s ease;
-    background-color: #ffffff0c;
-    border-radius: 50%;
-    line-height: 2px;
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-}
-
-.social-icons a:hover {
-    color: #ffffffc2;
-    background-color: #000000b0;
-}
-
-
-
-/*========= contact SECTION =========*/
-.popup-contact {
+  
+  
+  /*========= contact SECTION =========*/
+  .popup-contact {
     position: fixed;
     top: 0;
     left: 0;
@@ -1264,7 +1211,9 @@ input[type="checkbox"]{
     border: 1px solid rgba(105, 105, 105, 0.397);
     border-radius: 10px;
 }
-
+.form label textarea.input {
+    resize: none;
+}
 .form label .input + span {
     color: rgba(0, 0, 0, 0.5);
     position: absolute;
@@ -1299,7 +1248,6 @@ input[type="checkbox"]{
     transition: 0.3s ease;
     background-color: #C3AFFF; /* Warna latar tetap ada */
     color: white;
-    width: fit-content; /* Agar lebarnya tidak penuh */
     cursor: pointer;
     text-align: center;
     position: relative;
@@ -1332,3 +1280,126 @@ input[type="checkbox"]{
         opacity: 0;
     }
 }
+
+
+    /* =============== section Footer ================ */
+    footer {
+      background-color: #2A049C;
+      color: white;
+    }
+    
+    .footer-container {
+      display: flex;
+      position: relative;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      flex-direction: row;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .footer-text{
+      display: flex;
+      position: relative;
+      flex-wrap: wrap;
+      gap: 140px;
+      padding: 20px 20px 0 250px;
+    }
+    
+    .footer-section h4 {
+      font-size: 1.3em;
+      margin-bottom: 10px;
+    }
+    
+    .footer-section ul li {
+      list-style: none;
+      margin: 15px 0;
+    }
+    
+    .footer-section ul li a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      font-size: 1.0em;
+    }
+    
+    .footer-section ul li a:hover {
+      color: #b3b3b3;
+    }
+    
+    .logo-section {
+      text-align: center;
+      margin-top: 2em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 206px;
+    }
+    
+    .logo-footer {
+      border-radius: 2rem;
+    }
+    
+    .footer-bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #2A049C;
+    }
+    
+    .footer-line {
+      width: 100%;
+      height: 5px;
+      background-color: rgb(255, 255, 255);
+      margin-bottom: 10px;
+    }
+    
+    .footer-bottom p {
+      margin: 5px 0;
+      color: white;
+      font-size: 18px;
+      text-align: center;
+    }
+    
+    .footer-logo-container {
+      display: flex;
+      align-items: center;
+    }
+    
+    .footer-logo {
+      max-width: 50px;
+      margin: 10px 10px 10px 0;
+    }
+    
+    .footer-logo-container p {
+      margin: 0;
+      color: white;
+      font-size: 18px;
+    }
+    
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      margin-top: 5px;
+    }
+    
+    .social-icons a {
+      color: white;
+      margin: 0 5px;
+      font-size: 20px;
+      transition: color 0.3s ease;
+      background-color: #ffffff0c;
+      border-radius: 50%;
+      line-height: 2px;
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
+    
+    .social-icons a:hover {
+      color: #ffffffc2;
+      background-color: #000000b0;
+    }
