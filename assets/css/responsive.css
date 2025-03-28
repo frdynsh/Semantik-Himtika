@@ -1,10 +1,16 @@
-@media only screen and (max-width: 768px){
+@media (max-width: 480px){
+    /*==================== NAVBAR ====================*/
     nav {
         flex-wrap: wrap;
         align-items: center;
-        padding: 0 1rem;
+        padding: 0 1.5rem;
     }
-    
+    nav .logo img{
+        width: 35%;
+    }
+    nav .logo span {
+        font-size: 1.5rem;
+    }
     nav ul.hidden {
         display: none;
     }
@@ -20,14 +26,14 @@
         flex-direction: column;
     }
     nav ul li a {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
     nav .menu-icon {
         display: flex;
         cursor: pointer;
     }
 
-    /* HERO SECTION */
+    /*==================== HERO SECTION ====================*/
     .hero-section {
         background: 
             url(/assets/image/hero-section/background-hp.png),
@@ -46,7 +52,7 @@
     }
     .text-hero .button {
         font-size: 0.9rem;
-        padding: 12px 30px;
+        padding: 12px 20px;
     }
     .hero-section .bintang-kirikecil {
         top: 60%;
@@ -82,8 +88,11 @@
         padding: 0 45px;    
         animation: tickerMove 1.5s linear infinite;
     }
+    .live-hero img {
+        width: 25%;
+    }
     
-    /* ABOUT SECTION */
+    /*==================== ABOUT SECTION ====================*/
     .about-section {
         min-height: 600px;
         padding: 3rem 1rem;
@@ -102,7 +111,7 @@
         font-size: 1rem;
     }
 
-    /* TUJUAN SECTION */
+    /*==================== TUJUAN SECTION ====================*/
     .tujuan-section {
         padding: 0 1rem;
     }
@@ -139,7 +148,7 @@
         width: 9vw; 
     }
 
-    /* BIDANG SECTION */
+    /*==================== BIDANG SECTION ====================*/
     .bidang-section {
         width: 100%;
         height: 750px;
@@ -209,8 +218,11 @@
         padding: 0 45px;
         animation: tickerMove 1.5s linear infinite;
     }
+    .live-bidang img {
+        width: 25%;
+    }
 
-    /* TIMELINE SECTION */
+    /*==================== TIMELINE SECTION ====================*/
     .timeline {
         height: 900px;
     }
@@ -225,7 +237,7 @@
     .timeline-item {
         padding: 0 1rem;
         width: 100%;
-        grid-template-columns: 1fr 60px 1fr; /* Mengecilkan jarak tengah */
+        grid-template-columns: 1fr 60px 1fr;
     }
     .timeline-content {
         max-width: 300px;
@@ -247,7 +259,7 @@
     }
 
 
-    /* DOKUMENTASI SECTION */
+    /*==================== DOKUMENTASI SECTION ====================*/
     .dokumentasi-section {
         padding: 1.5rem;
         height: 650px;
@@ -263,7 +275,7 @@
     }
 
     .dokumentasi-container {
-        min-height: 270px;
+        min-height: 250px;
         gap: 0.75em;
     }
     .dokumentasi-container div {
@@ -271,7 +283,7 @@
     }
 
     
-    /* AFTERMOVIE SECTION */
+    /*==================== AFTERMOVIE SECTION ====================*/
     .aftermovie-section {
         height: 630px;
         padding: 5rem 2rem;
@@ -293,10 +305,10 @@
         width: 90%;
     }
 
-    /* FAQ SECTION */
+    /*==================== FAQ SECTION ====================*/
     .faq-section {
-        height: 830px;
-        padding: 0 1em;
+        height: 800px;
+        
     }
 
     .faq-section .text-h2 {
@@ -309,14 +321,17 @@
         max-width: 90%;
     }
 
-    .container-accordion {
-        margin-top: 1rem;
+    .faq-section .container-accordion {
+        display: flex;
+        flex-direction: column;
         width: 100%;
+        max-width: 90%;
+        margin-top: 20px;
     }
 
     .container-accordion li {
-        margin: 10px;
         padding: 0.5rem;
+        margin: 8px 0;
     }
 
     .container-accordion li label, 
@@ -338,7 +353,7 @@
         padding: 20px 0 0 20px;
     }
     .logo-section{
-        margin-left: 0px;
+        width: 35%;
     }
     .section-3{
         margin-top: -40px; 

@@ -73,6 +73,16 @@ document.querySelectorAll('#menu-list a').forEach(link => {
 
 
 
+// HERO SECTION
+document.addEventListener("DOMContentLoaded", function () {
+    let getStartedBtn = document.querySelector(".button");
+    let aboutSection = document.getElementById("about");
+
+    // Ketika tombol Get Started diklik, scroll ke bagian About
+    getStartedBtn.addEventListener("click", function () {
+        aboutSection.scrollIntoView({ behavior: "smooth" });
+    });
+});
 
 // LIVE HERO SECTION
 document.addEventListener("DOMContentLoaded", function () {
@@ -212,14 +222,40 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 //  FAQ SECTION - ACCORDION
-document.querySelectorAll('.accordion-toggle').forEach((checkbox) => {
-    checkbox.addEventListener('change', function() {
-      if (this.checked) {
-        document.querySelectorAll('.accordion-toggle').forEach((other) => {
-          if (other !== this) {
-            other.checked = false;
-          }
+document.addEventListener("DOMContentLoaded", () => {
+    const accordions = document.querySelectorAll(".accordion-toggle");
+
+    accordions.forEach((accordion) => {
+        accordion.addEventListener("change", function () {
+            // Menutup accordion lainnya saat yang ini dibuka
+            accordions.forEach((item) => {
+                if (item !== this) item.checked = false;
+            });
         });
-      }
     });
-  });
+});
+
+
+// POPUP CONTACT SECTION
+document.addEventListener("DOMContentLoaded", function () {
+    let contactBtn = document.querySelector(".faq-section button");
+    let popup = document.getElementById("contact");
+    let closeBtn = document.querySelector(".close-btn");
+
+    // Ketika tombol Contact Us diklik
+    contactBtn.addEventListener("click", function () {
+        popup.style.display = "flex"; // Tampilkan popup
+    });
+
+    // Ketika tombol close (X) diklik
+    closeBtn.addEventListener("click", function () {
+        popup.style.display = "none"; // Sembunyikan popup
+    });
+
+    // Menutup popup saat klik di luar kotak popup
+    window.addEventListener("click", function (event) {
+        if (event.target === popup) {
+            popup.style.display = "none";
+        }
+    });
+});
