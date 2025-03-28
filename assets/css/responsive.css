@@ -306,44 +306,46 @@
     }
 
     /*==================== FAQ SECTION ====================*/
-    .faq-section {
-        height: 800px;
-        
-    }
+  .faq-section {
+    height: 830px;
+    padding: 0 0.5em;
+  }
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .faq-section .text-h2 {
+    font-size: 11vw;
+    letter-spacing: normal;
+  }
 
-    .faq-section .text-h2 {
-        font-size: 11vw;
-        letter-spacing: normal;
-    }
+  .faq-section .text-p {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+  .faq-section .button-with-icon {
+    margin-bottom: 3rem;
+  }
+  .container-accordion {
+    margin: -20px 0 0 0;
+    width: 100%;
+  }
 
-    .faq-section .text-p {
-        font-size: 1rem;
-        max-width: 90%;
-    }
+  .container-accordion li {
+    margin: 10px;
+    padding: 0.5rem;
+  }
 
-    .faq-section .container-accordion {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        max-width: 90%;
-        margin-top: 20px;
-    }
+  .container-accordion li label,
+  .container-accordion .content p {
+    font-size: 0.9rem;
+  }
 
-    .container-accordion li {
-        padding: 0.5rem;
-        margin: 8px 0;
-    }
-
-    .container-accordion li label, 
-    .container-accordion .content p{
-        font-size: 0.9rem;
-    }
-
-    .container-accordion li label i {
-        font-size: 1.2rem;
-        width: 25px;
-        height: 25px;
-    }
+  .container-accordion li label i {
+    font-size: 1.2rem;
+    width: 25px;
+    height: 25px;
+  }
 
     /* =============== section Footer ================ */
     .footer-text{
