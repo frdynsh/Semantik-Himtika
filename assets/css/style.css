@@ -1189,7 +1189,7 @@ input[type="checkbox"] {
 }
 .container-accordion .content p {
   color: #2e2e2e;
-  max-width: 500px;
+  max-width: 580px;
   text-align: left;
   font-size: 1rem;
 }
@@ -1367,7 +1367,7 @@ input[type="checkbox"] {
       position: relative;
       flex-wrap: wrap;
       gap: 140px;
-      padding: 20px 20px 0 250px;
+      padding: 50px 20px 0 250px;
     }
     
     .footer-section h4 {
