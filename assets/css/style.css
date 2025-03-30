@@ -145,10 +145,10 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: linear-gradient(180deg, #ff0000, #ff0000);
+    background: linear-gradient(180deg, #000000b0, #ff0000);
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent; 
-    border-bottom: 1px solid #ff0000;
+    border-bottom: 1px solid #ff0000b0;
 }
 
 .menu-icon {
