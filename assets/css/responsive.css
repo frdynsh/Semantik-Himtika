@@ -328,10 +328,7 @@
     height: 830px;
     padding: 0 0.5em;
   }
-  .faq-grid {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
+
   .faq-section .text-h2 {
     font-size: 11vw;
     letter-spacing: normal;
@@ -344,11 +341,14 @@
   .faq-section .button-with-icon {
     margin-bottom: 3rem;
   }
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
   .container-accordion {
     margin: -20px 0 0 0;
     width: 100%;
   }
-
   .container-accordion li {
     margin: 10px;
     padding: 0.5rem;

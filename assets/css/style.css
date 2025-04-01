@@ -1017,30 +1017,22 @@ nav ul li a:hover {
   background-position: center;
   background-repeat: no-repeat;
 }
-.faq-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
 .faq-section .text-h2 {
-  background: linear-gradient(0deg, #5f29ff, #2a049c);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: clamp(5.5rem, 8.64086vw, 6rem);
-  font-weight: bold;
-  letter-spacing: -4px;
+    background: linear-gradient(0deg, #5f29ff, #2a049c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: clamp(5.5rem, 8.64086vw, 6rem);
+    font-weight: bold;
+    letter-spacing: -4px;
   max-width: 780px;
 }
 .faq-section .text-p {
-  background: linear-gradient(0deg, #5f29ff, #2a049c);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: clamp(1rem, 2vw, 1.25rem);
-  font-weight: 400;
-  margin-bottom: 1rem;
+    background: linear-gradient(0deg, #5f29ff, #2a049c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-weight: 400;
+    margin-bottom: 1rem;
 }
 .faq-section .button-with-icon {
     overflow: hidden;
@@ -1104,14 +1096,22 @@ nav ul li a:hover {
 }
 
 .container-faq {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
   width: 100%;
-  z-index: 10;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .faq-section .container-accordion {
