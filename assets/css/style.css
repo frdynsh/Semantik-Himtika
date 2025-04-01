@@ -163,7 +163,7 @@ nav ul li a:hover {
 .hero-section {
     width: 100%;
     height: 700px;
-    background-image: url(/assets/image/hero-section/background.png);
+    background-image: url("../image/hero-section/background.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; 
@@ -432,7 +432,7 @@ nav ul li a:hover {
     justify-content: center;
     text-align: center;
     background:
-        url(/assets/image/about-section/background.png),
+        url("../image/about-section/background.png"),
         linear-gradient(180deg, #5F29FF, #2A049C);
     background-size: cover;
     background-position: center;
@@ -473,7 +473,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     text-align: center;
-    background-image: url(/assets/image/tujuan-section/background.png);
+    background-image: url("../image/tujuan-section/background.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -534,7 +534,7 @@ nav ul li a:hover {
     text-align: center;
     overflow: hidden;
     background: 
-        url(/assets/image/bidang-section/background.png),
+        url("../image/bidang-section/background.png"),
         linear-gradient(180deg, #2A049C, #5F29FF);
     background-size: cover;
     background-position: center;
@@ -703,7 +703,7 @@ nav ul li a:hover {
     text-align: center;
     justify-content: center;
     background: 
-        url(/assets/image/timeline-section/background.png),
+        url("../image/timeline-section/background.png"),
         linear-gradient(180deg, #5F29FF, #2A049C);
     background-size: cover;
     background-position: center;
@@ -891,7 +891,7 @@ nav ul li a:hover {
     width: 100%;
     height: 900px;
     background: 
-        url(/assets/image/aftermovie-section/background.png),
+        url("../image/aftermovie-section/background.png"),
         linear-gradient(180deg, #5F29FF, #2A049C);
     background-size: cover;
     background-position: center;
@@ -1011,7 +1011,7 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: url(/assets/image/faq-section/background.png),
+  background: url("../image/faq-section/background.png"),
     linear-gradient(180deg, #ffffff, #ffffff);
   background-size: cover;
   background-position: center;

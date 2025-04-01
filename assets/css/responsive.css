@@ -54,7 +54,7 @@
     /*==================== HERO SECTION ====================*/
     .hero-section {
         background: 
-            url(/assets/image/hero-section/background-hp.png),
+            url("../image/hero-section/background-hp.png"),
             linear-gradient(180deg, #2A049C, #5F29FF);
         background-size: cover;
         background-position: center;
@@ -115,7 +115,7 @@
         min-height: 600px;
         padding: 3rem 1rem;
         background: 
-            url(/assets/image/about-section/background-hp.png),
+            url("../image/about-section/background-hp.png"),
             linear-gradient(180deg, #2A049C, #5F29FF);
         background-size: cover;
         background-position: center;
