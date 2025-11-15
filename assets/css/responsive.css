@@ -382,4 +382,11 @@
     .footer-bottom p{
         font-size: 1rem;
     }
+
+    /* Button BackToHIMTIKA */
+    .Btn-parent {
+        bottom: 20px;
+        right: 20px;
+    }
+    /* Button BackToHIMTIKA */
 }   
